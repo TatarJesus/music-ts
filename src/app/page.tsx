@@ -3,7 +3,7 @@ import Sider from 'antd/es/layout/Sider';
 import { Content, Footer, Header } from 'antd/es/layout/layout';
 import { ReactNode } from 'react';
 
-// const { Header, Footer, Sider, Content } = Layout;
+// const { Head.tsx, Footer, Sider, Content } = Layout;
 
 const headerStyle: React.CSSProperties = {
   textAlign: 'center',
@@ -39,12 +39,6 @@ const siderStyle: React.CSSProperties = {
   backgroundColor: '#1677ff',
 };
 
-const footerStyle: React.CSSProperties = {
-  textAlign: 'center',
-  color: '#fff',
-  backgroundColor: '#4096ff',
-};
-
 const layoutStyle = {
   borderRadius: 8,
   overflow: 'hidden',
@@ -59,17 +53,6 @@ interface HomeProps {
   children: ReactNode;
 }
 
-export default function Home({ children }: HomeProps) {
-  return (
-    <Layout style={layoutStyle}>
-      <Header style={headerStyle}>Header</Header>
-      <Layout style={centerStyle}>
-        <Sider width="25%" style={siderStyle}>
-          Sider
-        </Sider>
-        <Content style={contentStyle}>{children}</Content>
-      </Layout>
-      <Footer style={footerStyle}>Footer</Footer>
-    </Layout>
-  );
+export default function Home() {
+  return <></>;
 }
